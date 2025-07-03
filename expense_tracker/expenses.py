@@ -33,6 +33,7 @@ def checkDay_isValid(month, year):
 
 def add_expense():
     print("Enter date of expense:")
+    expense_dictionary = []
 
     # Get year
     while True:
@@ -87,7 +88,9 @@ def add_expense():
         "description": description
     }
 
+    expense_dictionary.append(newExpense)
     print("\nNew Expense Recorded:")
     print(newExpense)
+    print(expense_dictionary)
 
 
