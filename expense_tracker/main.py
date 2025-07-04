@@ -1,5 +1,6 @@
 # expense_tracker/main.py
 
+from expense_tracker.budget import track_budget
 from .expenses import add_expense, view_expenses, expense_dictionary
 from consolemenu import SelectionMenu
 
@@ -23,7 +24,7 @@ def main():
         elif choice == 1:
             view_expenses(expense_dictionary)
         elif choice == 2:
-            print("🔍 Budget tracking TBD")
+            track_budget(expense_dictionary)
         elif choice == 3:
             print("Save to CSV TBD")
         elif choice == 4:
