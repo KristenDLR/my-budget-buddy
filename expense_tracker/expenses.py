@@ -99,7 +99,7 @@ def add_expense():
     print("\nNew Expense Recorded:")
     print(newExpense)
     print(expense_dictionary)
-    view_expenses(expense_dictionary)
+
 
 
 # TODO: Store the dictionary in a CSV file
