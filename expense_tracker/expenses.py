@@ -102,9 +102,9 @@ def add_expense():
 
 
 
-# TODO: Store the dictionary in a CSV file
+# TODO: Store the dictionary in a CSV file, pre fill table from saved CSV
 def view_expenses(expense_dict):
-    print("\n{:<15} {:<20} {:<10} {:<30}".format('ID', 'Date', 'Category', 'Amount', 'Description'))
+    print("\n{:<5} {:<15} {:<20} {:<10} {:<30}".format('ID', 'Date', 'Category', 'Amount', 'Description'))
     print("-" * 85)
     for id, expense in expense_dict.items():
         print("{:<5} {:<15} {:<20} ${:<9.2f} {:<30}".format(
