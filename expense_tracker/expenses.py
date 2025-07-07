@@ -1,9 +1,6 @@
 import datetime
 from consolemenu import SelectionMenu
 
-expense_dictionary = {}
-expense_id = 1
-
 # check day is valid and return a datetime object
 def checkDay_isValid(month, year):
     thirtyOne_dayMonth = [1, 3, 5, 7, 8, 10, 12]
@@ -34,9 +31,10 @@ def checkDay_isValid(month, year):
 
 
 
-def add_expense():
+def add_expense(expense_dictionary):
     print("Enter date of expense:")
 
+    # required fields must be filled or error shows Invalid input
     # Get year
     while True:
         try:
@@ -82,7 +80,7 @@ def add_expense():
     # Get description
     description = input("Enter a brief description: ")
 
-    global expense_id
+    expense_id = max(expense_dictionary.keys(), default=0) + 1
 
     # Create the expense record
     newExpense = {
@@ -92,7 +90,6 @@ def add_expense():
         "description": description
     }
 
-    # expense_dictionary.append(newExpense)
     expense_dictionary[expense_id] = newExpense
     expense_id += 1
 
@@ -101,8 +98,6 @@ def add_expense():
     print(expense_dictionary)
 
 
-
-# TODO: Store the dictionary in a CSV file, pre fill table from saved CSV
 def view_expenses(expense_dict):
     print("\n{:<5} {:<15} {:<20} {:<10} {:<30}".format('ID', 'Date', 'Category', 'Amount', 'Description'))
     print("-" * 85)
