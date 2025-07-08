@@ -1,11 +1,14 @@
 # expense_tracker/main.py
 
 from expense_tracker.budget import track_budget
-from .expenses import add_expense, view_expenses, expense_dictionary
+from expense_tracker.utils import load_expenses, save_expenses
+from .expenses import add_expense, view_expenses
 from consolemenu import SelectionMenu
 
 def main():
     print("Welcome to the Expense Tracker!")
+
+    expense_dictionary = load_expenses()
 
     while True:
         menu_options = [
@@ -20,13 +23,13 @@ def main():
         choice = menu.selected_option
 
         if choice == 0:
-            add_expense()
+            add_expense(expense_dictionary)
         elif choice == 1:
             view_expenses(expense_dictionary)
         elif choice == 2:
             track_budget(expense_dictionary)
         elif choice == 3:
-            print("Save to CSV TBD")
+            save_expenses(expense_dictionary)
         elif choice == 4:
             print("👋 Goodbye!")
             break
