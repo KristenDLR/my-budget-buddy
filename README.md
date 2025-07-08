@@ -34,5 +34,8 @@ https://github.com/user-attachments/assets/f95ff202-1b51-4579-ad9d-67ec47b5cb41
 ![image](https://github.com/user-attachments/assets/96e34cf1-6529-4a79-ae49-34c60c2049fe)
 ![image](https://github.com/user-attachments/assets/f4bd1ddf-d1ba-4b99-9a4d-ca0662d6f426)
 
+### Save Expenses
+![image](https://github.com/user-attachments/assets/60309924-5ee8-46c4-ab3f-32e3160863aa)
+
 #### Exit Menu
 ![image](https://github.com/user-attachments/assets/a64b1f78-003b-43e9-9412-2743ca56b00e)
