@@ -1,5 +1,4 @@
 # My Budget Buddy
-
 Track and manage your expenses effectively with this personal expense tracker that allows users to log
 daily expenses, categorize them, and track spending against a monthly budget. Make sure to save and load expenses for future
 reference.
@@ -21,3 +20,19 @@ manage their expenses
 - run `python3 -m expense_tracker.main`
 
 ## Usage examples
+### Video of full workflow
+https://github.com/user-attachments/assets/f95ff202-1b51-4579-ad9d-67ec47b5cb41
+
+### Add Expenses
+![image](https://github.com/user-attachments/assets/9991af2c-d73a-4f30-987a-b789e94e87f2)
+![image](https://github.com/user-attachments/assets/9ef168e5-2609-4f20-ad98-58c48b6d5aca)
+
+### View Expenses
+![image](https://github.com/user-attachments/assets/8844c454-62a3-49f2-8b7f-9c816bc8c0d5)
+
+### Track Budget
+![image](https://github.com/user-attachments/assets/96e34cf1-6529-4a79-ae49-34c60c2049fe)
+![image](https://github.com/user-attachments/assets/f4bd1ddf-d1ba-4b99-9a4d-ca0662d6f426)
+
+#### Exit Menu
+![image](https://github.com/user-attachments/assets/a64b1f78-003b-43e9-9412-2743ca56b00e)
