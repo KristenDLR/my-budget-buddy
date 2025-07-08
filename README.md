@@ -12,5 +12,12 @@ manage their expenses
 4. Creates an interactive, menu-driven interface for ease of use
 
 ## Setup instructions
+- clone the following repo
+- ensure `pip` is installed `pip3 -V`
+- Press Cmd+Shift+P (Mac) or Ctrl+Shift+P (Windows/Linux)
+- Type: Python: Select Interpreter
+- Choose a Python 3 interpreter (e.g., Python 3.x.x)
+- In your terminal cd in the repository 
+- run `python3 -m expense_tracker.main`
 
 ## Usage examples
